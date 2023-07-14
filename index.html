@@ -5,34 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         body{
-            display: flex;
+            width: 100vw;
+            height: 100vh;
+
+            margin: 0px;
 
             justify-content: center;
             overflow-x: hidden;
         }
-        div{
-            position: absolute;
+        div.player{
+            color: white;
 
+
+            position: absolute;
             width: 200px;
             height: 50px;
+
+            text-align: center;
+            font-weight: bolder;
+
+            left: 50%;
+            translate: -50%;
         }
 
         #player1{
             background-color: blue;
             
-            top: 94%;
-            translate: -50;
+            top: 100%;
+            translate: -50% -100%;
         }
         #player2{
-            background-color: red;
+            background-color: rgb(255, 0, 0);
         }
 
     </style>
 </head>
 <body>
-    <div id="player1"></div>
-    <div id="player2"></div>
+    <div id="player1" class="player">1</div>
+    <div id="player2" class="player">2</div>
 
     <script src="script.js"></script>
 </body>
